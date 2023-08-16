@@ -1,0 +1,170 @@
+.content{
+  display: grid;
+  grid-template-columns: 0.71fr 1fr;
+  max-height: 100vh;
+  min-height: 100vh;
+  max-width: 1680px;
+  margin: 0px auto;
+}
+
+.infosContent{
+  position: relative;
+  background: linear-gradient(146.93deg, rgb(6, 96, 255) 25.02%, rgb(0, 50, 146) 131.52%);
+}
+
+.arrow-1{
+  color: transparent;
+  right: 20%;
+  top: -25%;
+  position: absolute;
+  display: block;
+  -webkit-user-drag: none;
+}
+
+.arrow-2{
+  position: absolute;
+  display: block;
+  -webkit-user-drag: none;
+}
+.infos{
+  font-size: 1.1rem;
+    position: relative;
+    margin: calc(50vh - 220px) auto 0px;
+    height: 440px
+}
+
+.infos > span{
+  display: block;
+  color: rgb(255, 164, 6);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.carrousel-infos{
+  width: 420px;
+}
+
+.carrousel-infos > h2{
+  width: 410px;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.icons-examples-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons-examples-content > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 240px;
+  font-family: Roboto, sans-serif;
+}
+
+.icon{
+  border-radius: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(6, 78, 204);
+    width: 65px;
+    height: 65px;
+}
+
+.text-icon{
+  color: rgb(255, 255, 255);
+}
+
+
+
+.bg-divider{
+  color: transparent;
+  position: absolute;
+    right: 0px;
+    top: 0px;
+    height: auto;
+    width: auto;
+    max-height: 100vh;
+    -webkit-user-drag: none;
+}
+
+.login-cadastro-content{
+  position: relative;
+}
+
+.login-content{
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.login-content h2{
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  color: rgb(76, 90, 117);
+  font-size: 1.31rem;
+}
+
+.login-content > span{
+  margin-bottom: 2rem;
+  font-size: 14px;
+  color: rgb(76, 90, 117);
+}
+
+.adiante-logo{
+  display: block;
+  margin-bottom: 2rem;
+  position: initial;
+}
+
+.btn-logar{
+  display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(6, 96, 255);
+    position: relative;
+    height: 48px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.35rem 2rem;
+    background-color: rgb(6, 96, 255);
+    color: rgb(255, 255, 255);
+}
+
+.btn-logar:disabled{
+  background: rgb(125, 136, 158);
+    border: 2px solid rgb(125, 136, 158);
+}
+
+@media (min-width: 450px){
+  .login-content {
+    margin-top: 2rem;
+    min-height: calc(100vh - 150px);
+}
+}
+
+
+@media (min-width: 1200px){
+  .login-cadastro-content{
+    overflow-y: auto;
+}
+}
+
+
+
+@media (min-width: 1200px){
+  .infos{
+    display: grid;
+}
+}
